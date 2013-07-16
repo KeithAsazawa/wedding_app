@@ -1,19 +1,21 @@
 <% provide(:title, 'Home') %>
 
-	<% if user_signed_in? %>
-		<h1>Dashboard</h1>
-			<div class="dashboard">
-				<div class="dashboard_top">
-					<div class="box">Edit Profile</div>
-					<div class="box"></div>
-					<div class="box"></div>
-					<div class="box"></div>
-				</div>
-				<div class="dashboard_bot">
-					<div class="box"></div>
-					<div class="box"></div>
-					<div class="box"></div>
-					<div class="box"></div>
+		<% if user_signed_in? %>
+		<div class="well">
+			<h1>Dashboard</h1>
+				<div class="dashboard">
+					<div class="dashboard_top">
+						<div class="box">Upload Photos</div>
+						<div class="box">Seating Chart</div>
+						<div class="box">Guestlist</div>
+						<div class="box">Profile</div>
+					</div>
+					<div class="dashboard_bot">
+						<div class="box"></div>
+						<div class="box"></div>
+						<div class="box"></div>
+						<div class="box"></div>
+					</div>
 				</div>
 			</div>
 	<% else %>

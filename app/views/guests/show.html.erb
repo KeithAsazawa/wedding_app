@@ -1,0 +1,23 @@
+<div class="row">
+	<div class="span6 offset3">
+		<div class="well">
+			<p>
+			  <b>First name:</b>
+			  <%= @guest.first_name %>
+			</p>
+
+			<p>
+			  <b>Last name:</b>
+			  <%= @guest.last_name %>
+			</p>
+
+			<p>
+			  <b>Email:</b>
+			  <%= @guest.email %>
+			</p>
+			<%= link_to 'Edit', edit_guest_path(@guest) %> |
+			<%= link_to 'Back', guests_path %>
+		</div>
+	</div>
+</div>
+
