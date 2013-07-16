@@ -1,0 +1,121 @@
+@import "bootstrap";
+
+h1 {
+	text-align: center;
+  font-family: Arizonia;
+}
+
+a.fill_div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
+.navbar-inner {
+  min-height: 70px;
+  background-color: gray;
+  a {
+  margin-top: 14px;
+  font-size: 22px;
+  font-family: Arizonia;
+  }
+}
+
+.box {
+  border: 1px solid gray;
+  min-height: 170px;
+  min-width: 170px;
+  margin: 20px 29px;
+  display: inline-block;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 74px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 2.3em;
+  color: #fff;
+  /*text-transform: uppercase;*/
+  letter-spacing: 1px;
+  padding-top: 9px;
+  /*font-weight: bold;*/
+  line-height: 1;
+  font-family: Arizonia;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* body */
+
+.dashboard {
+  border: 1px solid gray;
+  min-height: 400px;
+  min-width: 500px;
+}
+
+.hero-unit {
+  min-width: 1100px;
+  margin-left: -140px;
+  display: block;
+  margin-top: -4px;
+}
+
+/* footer */
+
+footer {
+	margin-right: auto;
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}

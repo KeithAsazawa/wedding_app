@@ -1,0 +1,27 @@
+<% provide(:title, 'Home') %>
+
+	<% if user_signed_in? %>
+		<h1>Dashboard</h1>
+			<div class="dashboard">
+				<div class="dashboard_top">
+					<div class="box">Edit Profile</div>
+					<div class="box"></div>
+					<div class="box"></div>
+					<div class="box"></div>
+				</div>
+				<div class="dashboard_bot">
+					<div class="box"></div>
+					<div class="box"></div>
+					<div class="box"></div>
+					<div class="box"></div>
+				</div>
+			</div>
+	<% else %>
+		<div class="center hero-unit" style="background: url('assets/weddingrings.jpg')" ;>
+  		<h1>Welcome to the Wedding App</h1>
+  		<h2>
+    		This is the homepage for the Wedding Application.
+  		</h2>
+  		<%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-large btn-primary" %>
+		</div>
+	<% end %>
