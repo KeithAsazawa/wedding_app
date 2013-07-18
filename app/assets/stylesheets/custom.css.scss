@@ -1,4 +1,9 @@
+
 @import "bootstrap";
+
+.btn.primary {
+  margin: 0px auto;
+}
 
 
 h1 {
@@ -9,6 +14,17 @@ h1 {
 h2 {
   text-align: center;
   font-family: Arizonia;
+}
+
+h3 {
+  text-align: center;
+}
+
+h6 {
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 a.fill_div {
@@ -92,33 +108,54 @@ textarea {
 
 /* body */
 
+.btn {
+  margin: 0px auto;
+}
+
 #previews {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   min-height: 200px;
   min-width: 200px;
 }
 
 .appinfo {
   /*border: 1px solid green;*/
-  min-height: 500px;
+  height: 425px;
+  width: 983px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.banner {
+  background-color: #EEEEEE;
+  min-height: 260px;
+
 }
 
 .cube {
-  /*border: 1px solid red;*/
   min-height: 218px;
   min-width: 295px;
-  margin: 47px 6px 0px 6px;
+  margin: 0px 6px 0px 6px;
   display: inline-block;
   img {
     margin-left: 36px;
   }
 }
 
-.description {
-  border: 1px solid blue;
-  display: inline-block;
+.dtitle {
+  min-height: 70px;
   min-width: 295px;
-  min-height: 200px;
+  /*border: 1px solid green;*/
+  display: inline-block;
+  margin-left: 12px;
+  margin-top: 30px;
+}
+
+.description {
+  /*border: 1px solid blue;*/
+  display: inline-block;
+  width: 295px;
+  height: 100px;
   margin: 0px 6px;
 }
 
