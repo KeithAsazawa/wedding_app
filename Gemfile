@@ -6,6 +6,8 @@ gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
+gem 'paperclip'
+gem 'dropzonejs-rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

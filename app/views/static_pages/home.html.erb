@@ -5,10 +5,10 @@
 			<h1>Dashboard</h1>
 				<div class="dashboard">
 					<div class="dashboard_top">
-						<div class="box">Upload Photos</div>
-						<div class="box">Seating Chart</div>
-						<div class="box">Guestlist</div>
-						<div class="box">Profile</div>
+						<div class="box"><a href="/albums/index">Albums</div>
+						<div class="box"><a href="">Seating Chart</div>
+						<div class="box"><a href="/guests">Guestlist</div>
+						<div class="box"><a href="">Profile</div>
 					</div>
 					<div class="dashboard_bot">
 						<div class="box"></div>
@@ -19,11 +19,21 @@
 				</div>
 			</div>
 	<% else %>
-		<div class="center hero-unit" style="background: url('assets/weddingrings.jpg')" ;>
-  		<h1>Welcome to the Wedding App</h1>
-  		<h2>
-    		This is the homepage for the Wedding Application.
-  		</h2>
+		<div class="center hero-unit">
+  		<h1>Welcome to The Wedding App</h1>
+  		<h3>This is the homepage for the Wedding Application.</h3>
   		<%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-large btn-primary" %>
 		</div>
+
+		<div class="appinfo">
+			<div class="cube"><img src="/assets/camera_icon01.jpeg"></div>
+			<div class="cube"><img src="/assets/folder_icon03.jpeg"></div>
+			<div class="cube"><img src="/assets/people_icon01.jpg"></div>
+			<div class="description"></div>
+			<div class="description"></div>
+			<div class="description"></div>
+		</div>
+	
 	<% end %>
+
+

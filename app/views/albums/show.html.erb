@@ -1,0 +1,20 @@
+<% provide(:title, 'All Albums') %>
+
+<h1>All Albums</h1>
+<%= @album %>
+<table class="table table-striped">
+	<tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+  </tr>
+<% @albums.each do |album| %>
+  <tr>
+    <td><%= album.title %></td>
+    <td><%= album.description %></td>
+    <td><%= link_to 'View Album', "/photos" %></td>
+<% end %>
+</table>
+<br />
+<%= link_to "Create New Album", new_album_path %>

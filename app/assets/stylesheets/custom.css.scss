@@ -1,5 +1,6 @@
 @import "bootstrap";
 
+
 h1 {
 	text-align: center;
   font-family: Arizonia;
@@ -7,6 +8,7 @@ h1 {
 
 h2 {
   text-align: center;
+  font-family: Arizonia;
 }
 
 a.fill_div {
@@ -90,8 +92,52 @@ textarea {
 
 /* body */
 
+#previews {
+  border: 1px solid red;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.appinfo {
+  /*border: 1px solid green;*/
+  min-height: 500px;
+}
+
+.cube {
+  /*border: 1px solid red;*/
+  min-height: 218px;
+  min-width: 295px;
+  margin: 47px 6px 0px 6px;
+  display: inline-block;
+  img {
+    margin-left: 36px;
+  }
+}
+
+.description {
+  border: 1px solid blue;
+  display: inline-block;
+  min-width: 295px;
+  min-height: 200px;
+  margin: 0px 6px;
+}
+
+.center {
+  width: 100%;
+  height: 250px;
+    h1 {
+      margin-top: 25px;
+ }
+}
+
 .well {
   margin-top: 35px;
+}
+
+.info {
+  min-height: 300px;
+  min-width: 1100px;
+  /*border: 1px solid gray;*/
 }
 
 .dashboard {
@@ -108,7 +154,7 @@ textarea {
   min-width: 1100px;
   margin-left: -140px;
   display: block;
-  margin-top: -4px;
+  margin-top: 25px;
 }
 
 /* footer */

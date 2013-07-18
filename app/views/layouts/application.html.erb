@@ -6,13 +6,18 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arizonia">
+
+  <link rel="stylesheet" href="dropzone.css" /> <script src="dropzone.js"></script>
+
+<!--   $(".box").click(function(){
+     window.location=$(this).find("a").attr("href"); 
+     return false;
+  }); -->
+
 </head>
   <body>
     <%= render 'layouts/header' %>
-    <div class="container">
-      <% flash.each do |name, msg| %>
-        <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
-      <% end %>
+    <div class="container">  
       <%= yield %>
       <%= render 'layouts/footer' %>
     </div>

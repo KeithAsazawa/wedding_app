@@ -1,9 +1,11 @@
 WeddingApp::Application.routes.draw do
+
+  devise_for :users 
+
   resources :guests
-
-
-  devise_for :users
-
+  resources :albums
+  resources :photos
+  
   root :to => 'static_pages#home'
   match '/about', to: 'static_pages#about'
   match '/help', to: 'static_pages#help'

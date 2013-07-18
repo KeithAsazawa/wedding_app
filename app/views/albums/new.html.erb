@@ -1,0 +1,11 @@
+<% provide(:title, 'New Album') %>
+<h1>Create a New Album</h1>
+
+<%= simple_form_for(@album, html: { class: 'form-horizontal'}) do |f| %>
+
+	<%= f.input :title %>
+	<%= f.input :description %>
+	<div class="form-actions">
+		<%= f.submit "Create Album", class: "btn btn-primary" %>
+	</div>
+<% end %>
